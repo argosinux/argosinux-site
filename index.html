@@ -1,1 +1,103 @@
-crear
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ARGOSINUX — Productos digitales</title>
+  <meta name="description" content="ARGOSINUX: emprendimiento de productos digitales. Primer producto: Number Ninja." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <img src="assets/argosinux-logo.png" alt="ARGOSINUX" class="brand-logo" />
+      <div>
+        <h1>ARGOSINUX</h1>
+        <p class="muted">Productos digitales • Simples • Confiables</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h2>Productos sólidos, como en los buenos tiempos: simples, claros y sin humo.</h2>
+      <p>
+        ARGOSINUX desarrolla productos digitales con foco en estabilidad, experiencia simple y mejora continua.
+      </p>
+
+      <div class="cta">
+        <a class="button" href="#productos">Ver productos</a>
+        <a class="button secondary" href="#contacto">Soporte / Contacto</a>
+      </div>
+
+      <div class="grid">
+        <div class="pill">
+          <strong>Estabilidad</strong><br/>
+          Menos circo, más confiabilidad.
+        </div>
+        <div class="pill">
+          <strong>Enfoque</strong><br/>
+          Lo que suma valor, se queda.
+        </div>
+        <div class="pill">
+          <strong>Calidad</strong><br/>
+          Detalles cuidados, como corresponde.
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="card">
+      <h3>Productos</h3>
+
+      <div class="product">
+        <div>
+          <h4>Number Ninja</h4>
+          <p class="muted">
+            Juego móvil de puzzle matemático de acción rápida. Funciona offline y se monetiza con publicidad.
+          </p>
+
+          <div class="links">
+            <a href="products/number-ninja/">Página del producto</a>
+            <a href="products/number-ninja/privacy-policy.html">Política de privacidad</a>
+            <a href="products/number-ninja/terms.html">Términos</a>
+            <a href="products/number-ninja/support.html">Soporte</a>
+          </div>
+
+          <p class="tiny muted" style="margin-top:10px;">
+            URL para Play Console (Privacy Policy):
+            <code>.../products/number-ninja/privacy-policy.html</code>
+          </p>
+        </div>
+
+        <div class="badge">#1</div>
+      </div>
+    </section>
+
+    <section id="contacto" class="card">
+      <h3>Contacto</h3>
+      <p class="muted">
+        Para consultas comerciales, soporte o temas legales:
+      </p>
+      <ul>
+        <li>Email: <strong>AGREGAR_TU_EMAIL_AQUÍ</strong></li>
+      </ul>
+      <p class="tiny muted">
+        Tip de abuelo digital: usá un mail tipo <code>support@...</code> o <code>argosinux.soporte@...</code> y te ahorrás dolores de cabeza.
+      </p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p class="tiny muted">© <span id="y"></span> ARGOSINUX</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
