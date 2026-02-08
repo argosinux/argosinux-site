@@ -9,76 +9,509 @@
 <body>
   <header class="container header">
     <div class="brand">
-      <img src="../../assets/argosinux-logo.png" alt="ARGOSINUX" class="brand-logo" />
+      <img src="../../assets/NumberNinja.png" alt="Number Ninja" class="brand-logo" />
       <div>
-        <h1>Política de Privacidad</h1>
-        <p class="muted">Number Ninja • ARGOSINUX</p>
+        <p class="eyebrow" data-i18n="legal_eyebrow">Legal</p>
+        <h1 data-i18n="privacy_title">Política de Privacidad</h1>
+        <p class="muted" data-i18n="privacy_subtitle">Number Ninja • ARGOSINUX</p>
       </div>
     </div>
     <nav class="nav">
-      <a href="./">Producto</a>
-      <a href="terms.html">Términos</a>
-      <a href="support.html">Soporte</a>
+      <a href="./" data-i18n="nav_product">Producto</a>
+      <a href="terms.html" data-i18n="nav_terms">Términos</a>
       <a href="../../index.html">ARGOSINUX</a>
+      <div class="lang-switch" role="group" aria-label="Selector de idioma">
+        <button class="lang-btn" type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
     </nav>
   </header>
 
   <main class="container">
-    <section class="card">
-      <p class="muted tiny">Última actualización: 2026-02-05</p>
+    <section class="card" data-lang="es">
+      <h2>Política de Privacidad de Number Ninja</h2>
+      <p class="muted tiny">Versión: 1.0</p>
+      <p class="muted tiny">Última actualización: 8 de febrero de 2026</p>
 
-      <h2>1) Resumen</h2>
+      <h3>Responsable del tratamiento</h3>
+      <p><strong>Nombre/Empresa:</strong> Argosninux</p>
+      <p><strong>Email:</strong> <a href="mailto:argos.ve5@gmail.com">argos.ve5@gmail.com</a></p>
+      <p><strong>País:</strong> Argentina</p>
+
+      <h2>1. Introducción</h2>
       <p>
-        Number Ninja es un juego móvil. No requiere crear cuentas ni solicita datos personales directamente.
-        El juego funciona offline; si hay conexión disponible, se utiliza para cargar y mostrar publicidad.
+        Esta Política de Privacidad describe cómo se recopila, usa, almacena y comparte información en la aplicación
+        móvil "Number Ninja", un juego educativo/puzzle de matemáticas desarrollado por Argoninux y disponible en
+        Google Play Store.
+      </p>
+      <p>
+        Al descargar, instalar o utilizar Number Ninja, aceptás las prácticas descritas en esta política.
+        Si no estás de acuerdo, te pedimos que no utilices la aplicación.
       </p>
 
-      <h2>2) Información que puede procesarse</h2>
+      <h2>2. Público objetivo y clasificación de edad</h2>
+      <p>
+        Number Ninja es una aplicación de público general apta para todas las edades. La app no está dirigida
+        específicamente a niños menores de 13 años, pero puede ser utilizada por ellos bajo supervisión de un adulto
+        responsable.
+      </p>
+      <p>De acuerdo con las políticas de Familias de Google Play, la aplicación:</p>
+      <ul>
+        <li>No recopila datos personales directamente de ningún usuario, incluidos menores.</li>
+        <li>Utiliza anuncios no personalizados para proteger la privacidad de todos los usuarios.</li>
+        <li>Cumple con la Ley de Protección de la Privacidad Infantil en Línea (COPPA, EE.UU.) y normativas equivalentes aplicables.</li>
+      </ul>
+
+      <h2>3. Datos que se recopilan y procesan</h2>
+
+      <h3>3.1 Datos proporcionados por el usuario</h3>
+      <p>
+        Number Ninja no requiere creación de cuenta, registro ni ingreso de datos personales
+        (nombre, email, teléfono, dirección, etc.).
+      </p>
+
+      <h3>3.2 Datos generados por el uso del juego (almacenados localmente)</h3>
+      <p>
+        La aplicación guarda en el dispositivo información de progreso y configuración para mejorar la experiencia
+        del usuario:
+      </p>
+      <ul>
+        <li>Niveles completados, puntajes, estrellas y tiempos de juego.</li>
+        <li>Logros desbloqueados, rachas diarias y progreso de cinturones.</li>
+        <li>Configuración del juego (volumen de sonido, vibración, idioma preferido).</li>
+        <li>Energía ninja y tiempo de regeneración.</li>
+        <li>Niveles de poderes desbloqueados.</li>
+      </ul>
+      <p>
+        Esta información se almacena exclusivamente de forma local en el dispositivo mediante almacenamiento interno
+        (shared_preferences) y no se envía a servidores propios ni de terceros.
+      </p>
+
+      <h3>3.3 Datos recopilados automáticamente por terceros (publicidad)</h3>
+      <p>La aplicación utiliza Google AdMob para mostrar anuncios. AdMob puede recopilar automáticamente los siguientes datos:</p>
+      <ul>
+        <li>Identificadores de dispositivo (por ejemplo, ID de publicidad de Google/AAID).</li>
+        <li>Información técnica del dispositivo (modelo, fabricante, sistema operativo, versión).</li>
+        <li>Dirección IP aproximada.</li>
+        <li>Datos de interacción con anuncios (impresiones, clics, visualizaciones de video).</li>
+      </ul>
+      <p>La app muestra tres tipos de anuncios:</p>
+      <ul>
+        <li>Anuncios de banner: visibles en pantallas del menú y de pausa.</li>
+        <li>Anuncios intersticiales: mostrados al completar un nivel o al finalizar una partida.</li>
+        <li>
+          Anuncios de video recompensado: el usuario elige voluntariamente ver un video a cambio de un beneficio dentro
+          del juego (como continuar una partida o recibir un poder extra).
+        </li>
+      </ul>
+      <p>
+        Para más información sobre cómo Google gestiona estos datos, consultá la Política de Privacidad de Google:
+        <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+      </p>
+
+      <h2>4. Base legal para el tratamiento de datos</h2>
+      <p>El tratamiento de datos se fundamenta en las siguientes bases legales:</p>
+      <ul>
+        <li>Interés legítimo: para almacenar el progreso del juego y configuración localmente en el dispositivo del usuario.</li>
+        <li>Consentimiento: para la visualización de anuncios de video recompensado, donde el usuario decide voluntariamente participar.</li>
+        <li>Ejecución del servicio: para el funcionamiento del sistema publicitario que permite mantener la aplicación gratuita.</li>
+      </ul>
+
+      <h2>5. Cómo se usan los datos</h2>
+      <p>La información se utiliza exclusivamente para:</p>
+      <ul>
+        <li>Guardar y restaurar el progreso del juego en el dispositivo.</li>
+        <li>Mantener las preferencias de configuración del usuario.</li>
+        <li>Mostrar anuncios y mantener el servicio gratuito.</li>
+        <li>Garantizar el funcionamiento técnico del sistema de anuncios.</li>
+        <li>Prevenir fraudes publicitarios (por parte de Google AdMob).</li>
+      </ul>
+
+      <h2>6. Compartición de datos con terceros</h2>
+      <p>Los datos pueden ser compartidos con terceros únicamente en los siguientes casos:</p>
       <ul>
         <li>
-          <strong>Publicidad (Google Mobile Ads / AdMob):</strong>
-          los proveedores publicitarios pueden utilizar identificadores publicitarios y datos técnicos
-          (por ejemplo IP, modelo de dispositivo, idioma y eventos de anuncios) para mostrar, medir y limitar anuncios,
-          de acuerdo con sus propias políticas.
+          Google AdMob: para servir anuncios dentro de la aplicación. Política de privacidad:
+          <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+        </li>
+        <li>Google Play Services: servicios necesarios para el funcionamiento y distribución de la aplicación.</li>
+      </ul>
+      <p>
+        No vendemos, alquilamos ni comercializamos datos personales. No compartimos datos con terceros fuera de los
+        indicados, salvo que medie obligación legal o requerimiento de autoridad competente.
+      </p>
+
+      <h2>7. Transferencias internacionales de datos</h2>
+      <p>
+        Los datos recopilados por Google AdMob pueden ser procesados en servidores ubicados fuera de la República
+        Argentina y/o fuera del Espacio Económico Europeo.
+      </p>
+      <p>
+        Google aplica cláusulas contractuales estándar y otras salvaguardas aprobadas para proteger los datos
+        transferidos internacionalmente, de conformidad con las normativas aplicables. Para más información, consultá:
+        <a href="https://policies.google.com/privacy/frameworks">https://policies.google.com/privacy/frameworks</a>
+      </p>
+
+      <h2>8. Anuncios y personalización</h2>
+      <p>
+        La aplicación está configurada para solicitar anuncios no personalizados de forma predeterminada, lo que
+        limita el uso de datos para segmentación publicitaria.
+      </p>
+      <p>El usuario también puede gestionar la personalización de anuncios desde la configuración de su dispositivo Android:</p>
+      <ul>
+        <li>Ajustes &gt; Google &gt; Anuncios &gt; Desactivar personalización de anuncios.</li>
+        <li>Restablecer el ID de publicidad en cualquier momento.</li>
+      </ul>
+      <p>
+        En jurisdicciones donde sea requerido (por ejemplo, la Unión Europea bajo el marco TCF 2.0 de IAB), se
+        implementarán mecanismos de consentimiento adicionales (CMP) antes de la recopilación de datos publicitarios.
+      </p>
+
+      <h2>9. Retención de datos</h2>
+      <ul>
+        <li>
+          Datos locales: se almacenan en el dispositivo hasta que el usuario los elimine manualmente, restablezca los
+          datos de la aplicación o la desinstale.
         </li>
         <li>
-          <strong>Datos locales de juego:</strong>
-          progreso, puntajes y preferencias se guardan localmente en el dispositivo.
+          Datos recopilados por AdMob: se rigen por las políticas y tiempos de retención de Google. Consultá:
+          <a href="https://policies.google.com/technologies/retention">https://policies.google.com/technologies/retention</a>
         </li>
       </ul>
 
-      <h2>3) Qué no recopilamos directamente</h2>
+      <h2>10. Seguridad</h2>
+      <p>
+        Implementamos medidas razonables para proteger la información almacenada localmente. No obstante, ningún
+        sistema de almacenamiento es 100% seguro.
+      </p>
+      <p>Recomendamos al usuario:</p>
       <ul>
-        <li>No pedimos nombre, correo o teléfono dentro de la app.</li>
-        <li>No pedimos ubicación precisa.</li>
+        <li>Mantener el dispositivo protegido con bloqueo de pantalla.</li>
+        <li>Mantener el sistema operativo y la aplicación actualizados.</li>
+        <li>No utilizar dispositivos con acceso root o jailbreak, ya que esto puede comprometer la seguridad de los datos locales.</li>
       </ul>
 
-      <h2>4) Retención</h2>
+      <h2>11. Derechos del usuario</h2>
       <p>
-        El progreso se mantiene en el dispositivo del usuario. La retención y uso de datos por terceros
-        (por ejemplo proveedores de anuncios) depende de sus políticas.
+        De acuerdo con la legislación aplicable (incluyendo la Ley 25.326 de Protección de Datos Personales de
+        Argentina, el GDPR de la UE y normativas equivalentes), el usuario tiene derecho a:
+      </p>
+      <ul>
+        <li>Acceso: conocer qué datos se almacenan sobre su persona.</li>
+        <li>Rectificación: solicitar la corrección de datos inexactos.</li>
+        <li>Supresión: eliminar los datos locales borrando los datos de la aplicación o desinstalándola.</li>
+        <li>Oposición: oponerse al tratamiento de datos con fines publicitarios mediante la configuración de su dispositivo.</li>
+        <li>Portabilidad: solicitar una copia de sus datos en formato accesible (en este caso, los datos son locales y están bajo control directo del usuario).</li>
+        <li>Limitación del tratamiento: solicitar la restricción del uso de sus datos en los casos previstos por la ley.</li>
+      </ul>
+      <p>Para ejercer cualquiera de estos derechos, podés contactarnos a: <a href="mailto:argos.ve5@gmail.com">argos.ve5@gmail.com</a></p>
+      <p>
+        Asimismo, en Argentina, el usuario tiene derecho a presentar un reclamo ante la Agencia de Acceso a la
+        Información Pública (AAIP), autoridad de control en materia de protección de datos personales:
+        <a href="https://www.argentina.gob.ar/aaip">https://www.argentina.gob.ar/aaip</a>
       </p>
 
-      <h2>5) Seguridad</h2>
+      <h2>12. Privacidad de menores</h2>
       <p>
-        Aplicamos medidas razonables para proteger la información. Sin embargo, ningún sistema es infalible.
+        Number Ninja no recopila intencionalmente datos personales de niños menores de 13 años ni de ningún otro
+        usuario.
+      </p>
+      <p>
+        Si un padre, madre o tutor legal considera que un menor a su cargo nos proporcionó información personal de
+        alguna forma, puede contactarnos a <a href="mailto:argos.ve5@gmail.com">argos.ve5@gmail.com</a> para solicitar su revisión
+        y eliminación. Responderemos en un plazo máximo de 30 días.
+      </p>
+      <p>Adicionalmente:</p>
+      <ul>
+        <li>La aplicación utiliza anuncios no personalizados de forma predeterminada.</li>
+        <li>No se incluyen funciones de compras dentro de la aplicación.</li>
+        <li>No se requiere registro ni ingreso de datos personales para utilizar la app.</li>
+      </ul>
+
+      <h2>13. Cambios en esta política</h2>
+      <p>Podemos actualizar esta Política de Privacidad en el futuro. En caso de cambios relevantes:</p>
+      <ul>
+        <li>Actualizaremos la fecha y número de versión en la parte superior de este documento.</li>
+        <li>Informaremos a los usuarios a través de la publicación correspondiente en Google Play Store o mediante la URL pública de esta política.</li>
+      </ul>
+      <p>Se recomienda al usuario revisar esta política periódicamente.</p>
+
+      <h2>14. Contacto</h2>
+      <p>Si tenés dudas, consultas o solicitudes relacionadas con esta Política de Privacidad, podés escribirnos a:</p>
+      <p><strong>Email:</strong> <a href="mailto:argos.ve5@gmail.com">argos.ve5@gmail.com</a></p>
+    </section>
+
+    <section class="card" data-lang="en" hidden>
+      <h2>Number Ninja Privacy Policy</h2>
+      <p class="muted tiny">Version: 1.0</p>
+      <p class="muted tiny">Last updated: February 8, 2026</p>
+
+      <h3>Data Controller</h3>
+      <p><strong>Name/Company:</strong> Argosninux</p>
+      <p><strong>Email:</strong> <a href="mailto:argos.ve5@gmail.com">argos.ve5@gmail.com</a></p>
+      <p><strong>Country:</strong> Argentina</p>
+
+      <h2>1. Introduction</h2>
+      <p>
+        This Privacy Policy describes how information is collected, used, stored, and shared in the mobile app
+        "Number Ninja", an educational math puzzle game developed by Argoninux and available on the Google Play Store.
+      </p>
+      <p>
+        By downloading, installing, or using Number Ninja, you accept the practices described in this policy. If you
+        do not agree, please do not use the application.
       </p>
 
-      <h2>6) Cambios</h2>
+      <h2>2. Target audience and age classification</h2>
       <p>
-        Podemos actualizar esta política. La fecha de “Última actualización” reflejará el cambio.
+        Number Ninja is a general-audience app suitable for all ages. The app is not specifically directed at children
+        under 13, but they may use it under adult supervision.
+      </p>
+      <p>According to Google Play Families policies, the app:</p>
+      <ul>
+        <li>Does not collect personal data directly from any user, including minors.</li>
+        <li>Uses non-personalized ads to protect the privacy of all users.</li>
+        <li>Complies with the Children’s Online Privacy Protection Act (COPPA, U.S.) and applicable equivalent regulations.</li>
+      </ul>
+
+      <h2>3. Data collected and processed</h2>
+
+      <h3>3.1 User-provided data</h3>
+      <p>
+        Number Ninja does not require account creation, registration, or entry of personal data (name, email, phone,
+        address, etc.).
       </p>
 
-      <h2>7) Contacto</h2>
+      <h3>3.2 Data generated by gameplay (stored locally)</h3>
       <p>
-        Para consultas, visitá <a href="support.html">Soporte</a>.
+        The app stores progress and settings on the device to improve the user experience:
+      </p>
+      <ul>
+        <li>Completed levels, scores, stars, and play times.</li>
+        <li>Unlocked achievements, daily streaks, and belt progress.</li>
+        <li>Game settings (sound volume, vibration, preferred language).</li>
+        <li>Ninja energy and regeneration time.</li>
+        <li>Unlocked power levels.</li>
+      </ul>
+      <p>
+        This information is stored locally on the device using internal storage (shared_preferences) and is not sent
+        to our servers or to third parties.
       </p>
 
-      <p class="tiny muted">
-        Nota: esta política describe el tratamiento dentro de la app y su relación con publicidad.
-        Los proveedores de anuncios pueden tener políticas adicionales.
+      <h3>3.3 Automatically collected data by third parties (advertising)</h3>
+      <p>The app uses Google AdMob to display ads. AdMob may automatically collect the following data:</p>
+      <ul>
+        <li>Device identifiers (e.g., Google Advertising ID/AAID).</li>
+        <li>Technical device information (model, manufacturer, operating system, version).</li>
+        <li>Approximate IP address.</li>
+        <li>Ad interaction data (impressions, clicks, video views).</li>
+      </ul>
+      <p>The app shows three types of ads:</p>
+      <ul>
+        <li>Banner ads: visible on menu and pause screens.</li>
+        <li>Interstitial ads: shown when completing a level or ending a run.</li>
+        <li>
+          Rewarded video ads: the user voluntarily chooses to watch a video in exchange for an in-game benefit (such as
+          continuing a run or receiving an extra power).
+        </li>
+      </ul>
+      <p>
+        For more information on how Google handles this data, see Google’s Privacy Policy:
+        <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
       </p>
+
+      <h2>4. Legal basis for data processing</h2>
+      <p>The data processing is based on the following legal grounds:</p>
+      <ul>
+        <li>Legitimate interest: storing game progress and settings locally on the user’s device.</li>
+        <li>Consent: for rewarded video ads where the user voluntarily chooses to participate.</li>
+        <li>Performance of the service: operation of the ad system that keeps the app free.</li>
+      </ul>
+
+      <h2>5. How data is used</h2>
+      <p>The information is used exclusively to:</p>
+      <ul>
+        <li>Save and restore game progress on the device.</li>
+        <li>Maintain user preference settings.</li>
+        <li>Show ads and keep the service free.</li>
+        <li>Ensure the technical operation of the ad system.</li>
+        <li>Prevent ad fraud (by Google AdMob).</li>
+      </ul>
+
+      <h2>6. Data sharing with third parties</h2>
+      <p>Data may be shared with third parties only in the following cases:</p>
+      <ul>
+        <li>
+          Google AdMob: to serve ads within the app. Privacy policy:
+          <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>
+        </li>
+        <li>Google Play Services: services necessary for the app’s operation and distribution.</li>
+      </ul>
+      <p>
+        We do not sell, rent, or trade personal data. We do not share data with third parties beyond those indicated,
+        unless required by law or by a competent authority.
+      </p>
+
+      <h2>7. International data transfers</h2>
+      <p>
+        Data collected by Google AdMob may be processed on servers located outside the Republic of Argentina and/or
+        outside the European Economic Area.
+      </p>
+      <p>
+        Google applies standard contractual clauses and other approved safeguards to protect data transferred
+        internationally, in accordance with applicable regulations. For more information, see:
+        <a href="https://policies.google.com/privacy/frameworks">https://policies.google.com/privacy/frameworks</a>
+      </p>
+
+      <h2>8. Ads and personalization</h2>
+      <p>
+        The app is configured to request non-personalized ads by default, which limits the use of data for ad targeting.
+      </p>
+      <p>Users can also manage ad personalization from their Android device settings:</p>
+      <ul>
+        <li>Settings &gt; Google &gt; Ads &gt; Turn off ad personalization.</li>
+        <li>Reset the advertising ID at any time.</li>
+      </ul>
+      <p>
+        In jurisdictions where required (for example, the European Union under the IAB TCF 2.0 framework), additional
+        consent mechanisms (CMP) will be implemented before collecting ad data.
+      </p>
+
+      <h2>9. Data retention</h2>
+      <ul>
+        <li>
+          Local data: stored on the device until the user deletes app data, resets the app data, or uninstalls it.
+        </li>
+        <li>
+          AdMob data: subject to Google’s policies and retention periods. See:
+          <a href="https://policies.google.com/technologies/retention">https://policies.google.com/technologies/retention</a>
+        </li>
+      </ul>
+
+      <h2>10. Security</h2>
+      <p>
+        We implement reasonable measures to protect locally stored information. However, no storage system is 100%
+        secure.
+      </p>
+      <p>We recommend users:</p>
+      <ul>
+        <li>Keep the device protected with a screen lock.</li>
+        <li>Keep the operating system and the app up to date.</li>
+        <li>Avoid using rooted or jailbroken devices, as this may compromise the security of local data.</li>
+      </ul>
+
+      <h2>11. User rights</h2>
+      <p>
+        Under applicable law (including Argentina’s Personal Data Protection Law 25,326, the EU GDPR, and equivalent
+        regulations), users have the right to:
+      </p>
+      <ul>
+        <li>Access: know what data is stored about them.</li>
+        <li>Rectification: request correction of inaccurate data.</li>
+        <li>Deletion: remove local data by clearing app data or uninstalling the app.</li>
+        <li>Objection: object to processing for advertising purposes via device settings.</li>
+        <li>Portability: request a copy of their data in an accessible format (in this case, data is local and under the user’s control).</li>
+        <li>Restriction of processing: request restriction of data use in cases provided by law.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at: <a href="mailto:argos.ve5@gmail.com">argos.ve5@gmail.com</a></p>
+      <p>
+        In Argentina, users also have the right to file a complaint with the Agency for Access to Public Information
+        (AAIP), the data protection authority:
+        <a href="https://www.argentina.gob.ar/aaip">https://www.argentina.gob.ar/aaip</a>
+      </p>
+
+      <h2>12. Children’s privacy</h2>
+      <p>
+        Number Ninja does not knowingly collect personal data from children under 13 or from any other user.
+      </p>
+      <p>
+        If a parent or legal guardian believes that a minor in their care has provided personal information in any
+        way, they can contact us at <a href="mailto:argos.ve5@gmail.com">argos.ve5@gmail.com</a> to request review and
+        deletion. We will respond within a maximum of 30 days.
+      </p>
+      <p>Additionally:</p>
+      <ul>
+        <li>The app uses non-personalized ads by default.</li>
+        <li>No in-app purchases are included.</li>
+        <li>No registration or personal data entry is required to use the app.</li>
+      </ul>
+
+      <h2>13. Changes to this policy</h2>
+      <p>We may update this Privacy Policy in the future. In case of material changes:</p>
+      <ul>
+        <li>We will update the date and version number at the top of this document.</li>
+        <li>We will inform users via the Google Play Store listing or through the public URL of this policy.</li>
+      </ul>
+      <p>We recommend users review this policy periodically.</p>
+
+      <h2>14. Contact</h2>
+      <p>If you have questions, inquiries, or requests related to this Privacy Policy, please write to:</p>
+      <p><strong>Email:</strong> <a href="mailto:argos.ve5@gmail.com">argos.ve5@gmail.com</a></p>
     </section>
   </main>
+
+  <script>
+    const translations = {
+      es: {
+        legal_eyebrow: "Legal",
+        privacy_title: "Política de Privacidad",
+        privacy_subtitle: "Number Ninja • ARGOSINUX",
+        nav_product: "Producto",
+        nav_terms: "Términos",
+        nav_support: "Soporte"
+      },
+      en: {
+        legal_eyebrow: "Legal",
+        privacy_title: "Privacy Policy",
+        privacy_subtitle: "Number Ninja • ARGOSINUX",
+        nav_product: "Product",
+        nav_terms: "Terms",
+        nav_support: "Support"
+      }
+    };
+
+    const langButtons = document.querySelectorAll(".lang-btn");
+    const langBlocks = document.querySelectorAll("[data-lang]");
+
+    const setLanguage = (lang) => {
+      const dict = translations[lang] || translations.es;
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.dataset.i18n;
+        if (dict[key]) {
+          el.innerHTML = dict[key];
+        }
+      });
+
+      langBlocks.forEach((block) => {
+        block.hidden = block.dataset.lang !== lang;
+      });
+
+      langButtons.forEach((btn) => {
+        const isActive = btn.dataset.lang === lang;
+        btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+
+      try {
+        localStorage.setItem("site_lang", lang);
+      } catch (err) {
+        // ignore storage failures
+      }
+    };
+
+    langButtons.forEach((btn) => {
+      btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
+    });
+
+    const storedLang = (() => {
+      try {
+        return localStorage.getItem("site_lang");
+      } catch (err) {
+        return null;
+      }
+    })();
+    const browserLang = navigator.language && navigator.language.toLowerCase().startsWith("es") ? "es" : "en";
+    setLanguage(storedLang || browserLang || "es");
+  </script>
 </body>
 </html>
