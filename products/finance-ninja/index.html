@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Finance Ninja - ARGOSINUX</title>
-  <meta name="description" content="Finance Ninja: asistente financiero personal offline para presupuesto, metas de ahorro y reportes." />
+  <meta name="description" id="meta-description" content="Finance Ninja: asistente financiero personal offline para presupuesto, metas de ahorro y reportes." />
   <link rel="stylesheet" href="../../assets/styles.css" />
 </head>
 <body>
@@ -13,15 +13,19 @@
       <a class="brand" href="../../index.html" aria-label="ARGOSINUX, inicio">
         <img src="../../assets/argosinux-logo.png" alt="ARGOSINUX" class="brand-logo" />
         <div>
-          <span class="eyebrow">App financiera</span>
+          <span class="eyebrow" data-i18n="brand_kicker">App financiera</span>
           <h1>Finance Ninja</h1>
         </div>
       </a>
       <nav class="nav">
-        <a href="../../index.html">Inicio</a>
-        <a href="privacy-policy.html">Privacidad</a>
-        <a href="#faq">Preguntas frecuentes</a>
-        <a class="button small" href="#">Descargar en Google Play</a>
+        <a href="../../index.html" data-i18n="nav_home">Inicio</a>
+        <a href="privacy-policy.html" data-i18n="nav_privacy">Privacidad</a>
+        <a href="#faq" data-i18n="nav_faq">Preguntas frecuentes</a>
+        <a class="button small" href="#" data-i18n="nav_download">Descargar en Google Play</a>
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button class="lang-btn" type="button" data-lang="es" aria-pressed="true">ES</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </nav>
     </div>
   </header>
@@ -30,21 +34,21 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="hero-kicker">Domina tus finanzas. Sin complicaciones.</p>
-          <h2>Tu asistente financiero personal en el bolsillo.</h2>
-          <p class="muted">
+          <p class="hero-kicker" data-i18n="hero_kicker">Domina tus finanzas. Sin complicaciones.</p>
+          <h2 data-i18n="hero_title">Tu asistente financiero personal en el bolsillo.</h2>
+          <p class="muted" data-i18n="hero_desc">
             Registra gastos, planifica tu presupuesto, alcanza tus metas de ahorro y visualiza tu progreso economico
             desde tu celular, sin conexion a internet.
           </p>
           <div class="hero-actions">
-            <a class="button" href="#">Descargar gratis en Android</a>
-            <a class="button ghost" href="privacy-policy.html">Políticas de privacidad</a>
+            <a class="button" href="#" data-i18n="hero_cta_download">Descargar gratis en Android</a>
+            <a class="button ghost" href="privacy-policy.html" data-i18n="hero_cta_privacy">Politicas de privacidad</a>
           </div>
         </div>
         <div class="hero-visual">
           <div class="hero-card">
             <img class="game-logo" src="../../assets/FinanceNinja.png" alt="Finance Ninja" />
-            <p class="muted">Control total del dinero, 100% privado en tu dispositivo.</p>
+            <p class="muted" data-i18n="hero_card_desc">Control total del dinero, 100% privado en tu dispositivo.</p>
           </div>
         </div>
       </div>
@@ -54,51 +58,21 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Caracteristicas principales</p>
-            <h3>Todo lo que necesitas para ordenar tus finanzas</h3>
+            <p class="eyebrow" data-i18n="features_eyebrow">Caracteristicas principales</p>
+            <h3 data-i18n="features_title">Todo lo que necesitas para ordenar tus finanzas</h3>
           </div>
         </div>
         <div class="game-grid">
-          <div class="game-card">
-            <h4>Dashboard inteligente</h4>
-            <p class="muted">Visualiza de un vistazo tu balance mensual, ingresos, gastos ejecutados y presupuesto planificado.</p>
-          </div>
-          <div class="game-card">
-            <h4>Presupuesto por categorias</h4>
-            <p class="muted">Asigna limites de gasto por categoria y recibe avisos cuando te acercas al maximo mensual.</p>
-          </div>
-          <div class="game-card">
-            <h4>Metas de ahorro</h4>
-            <p class="muted">Define objetivos y sigue tu progreso para alcanzarlos con claridad.</p>
-          </div>
-          <div class="game-card">
-            <h4>Historial de transacciones</h4>
-            <p class="muted">Registra ingresos y gastos con categorias personalizables. Filtra, busca y analiza cuando quieras.</p>
-          </div>
-          <div class="game-card">
-            <h4>Transacciones recurrentes</h4>
-            <p class="muted">Automatiza pagos fijos como arriendo, servicios o suscripciones para no olvidarlos.</p>
-          </div>
-          <div class="game-card">
-            <h4>Metricas y reportes</h4>
-            <p class="muted">Consulta resúmenes mensuales detallados y exporta reportes en PDF.</p>
-          </div>
-          <div class="game-card">
-            <h4>Lista de compras</h4>
-            <p class="muted">Organiza compras planificadas y controla el gasto antes de llegar al supermercado.</p>
-          </div>
-          <div class="game-card">
-            <h4>Notificaciones inteligentes</h4>
-            <p class="muted">Recibe recordatorios y alertas sobre gastos y presupuesto directamente en tu dispositivo.</p>
-          </div>
-          <div class="game-card">
-            <h4>100% privado y seguro</h4>
-            <p class="muted">Toda la informacion se almacena localmente en tu dispositivo con capa adicional de seguridad.</p>
-          </div>
-          <div class="game-card">
-            <h4>Respaldo y restauracion</h4>
-            <p class="muted">Exporta e importa tus datos facilmente para no perder informacion al cambiar de equipo.</p>
-          </div>
+          <div class="game-card"><h4 data-i18n="f1_t">Dashboard inteligente</h4><p class="muted" data-i18n="f1_d">Visualiza tu balance mensual, ingresos, gastos y presupuesto planificado.</p></div>
+          <div class="game-card"><h4 data-i18n="f2_t">Presupuesto por categorias</h4><p class="muted" data-i18n="f2_d">Asigna limites de gasto por categoria y recibe avisos antes de superarlos.</p></div>
+          <div class="game-card"><h4 data-i18n="f3_t">Metas de ahorro</h4><p class="muted" data-i18n="f3_d">Define objetivos financieros y realiza seguimiento de tu progreso.</p></div>
+          <div class="game-card"><h4 data-i18n="f4_t">Historial de transacciones</h4><p class="muted" data-i18n="f4_d">Registra ingresos y gastos con categorias personalizables. Filtra y analiza.</p></div>
+          <div class="game-card"><h4 data-i18n="f5_t">Transacciones recurrentes</h4><p class="muted" data-i18n="f5_d">Automatiza pagos fijos como arriendo, servicios o suscripciones.</p></div>
+          <div class="game-card"><h4 data-i18n="f6_t">Metricas y reportes</h4><p class="muted" data-i18n="f6_d">Analiza tus finanzas con resumenes mensuales y exporta a PDF.</p></div>
+          <div class="game-card"><h4 data-i18n="f7_t">Lista de compras</h4><p class="muted" data-i18n="f7_d">Organiza compras planificadas y controla el gasto antes de comprar.</p></div>
+          <div class="game-card"><h4 data-i18n="f8_t">Notificaciones inteligentes</h4><p class="muted" data-i18n="f8_d">Recibe recordatorios y alertas sobre gastos y presupuesto.</p></div>
+          <div class="game-card"><h4 data-i18n="f9_t">100% privado y seguro</h4><p class="muted" data-i18n="f9_d">Toda la informacion se almacena localmente en tu dispositivo.</p></div>
+          <div class="game-card"><h4 data-i18n="f10_t">Respaldo y restauracion</h4><p class="muted" data-i18n="f10_d">Exporta e importa tu informacion para no perder datos.</p></div>
         </div>
       </div>
     </section>
@@ -107,17 +81,17 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Por que Finance Ninja</p>
-            <h3>Ventajas clave</h3>
+            <p class="eyebrow" data-i18n="why_eyebrow">Por que Finance Ninja</p>
+            <h3 data-i18n="why_title">Ventajas clave</h3>
           </div>
         </div>
         <div class="game-card">
           <ul class="feature-list">
-            <li>Funciona sin internet: ✅</li>
-            <li>Datos 100% en tu dispositivo: ✅</li>
-            <li>Sin suscripciones: ✅</li>
-            <li>Presupuesto + Metas + Metricas: ✅</li>
-            <li>Exportacion en PDF: ✅</li>
+            <li data-i18n="why_1">Funciona sin internet: SI</li>
+            <li data-i18n="why_2">Datos 100% en tu dispositivo: SI</li>
+            <li data-i18n="why_3">Sin suscripciones: SI</li>
+            <li data-i18n="why_4">Presupuesto + Metas + Metricas: SI</li>
+            <li data-i18n="why_5">Exportacion en PDF: SI</li>
           </ul>
         </div>
       </div>
@@ -127,17 +101,13 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Testimonios</p>
-            <h3>Resenas de usuarios</h3>
+            <p class="eyebrow" data-i18n="testi_eyebrow">Testimonios</p>
+            <h3 data-i18n="testi_title">Resenas de usuarios</h3>
           </div>
         </div>
         <div class="game-grid">
-          <div class="game-card">
-            <p class="muted">"Finalmente una app de finanzas que no me pide crear una cuenta ni subir mis datos a la nube."</p>
-          </div>
-          <div class="game-card">
-            <p class="muted">"Empece a ahorrar desde el primer mes. Ver las metricas me motivo a gastar mejor."</p>
-          </div>
+          <div class="game-card"><p class="muted" data-i18n="testi_1">"Finalmente una app de finanzas que no me pide crear una cuenta ni subir mis datos a la nube."</p></div>
+          <div class="game-card"><p class="muted" data-i18n="testi_2">"Empece a ahorrar desde el primer mes. Ver las metricas me motivo a gastar mejor."</p></div>
         </div>
       </div>
     </section>
@@ -146,11 +116,11 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Descargala ahora</p>
-            <h3>Es gratis y esta disponible para Android</h3>
-            <p class="muted">Empieza hoy mismo a tomar el control de tu dinero.</p>
+            <p class="eyebrow" data-i18n="download_eyebrow">Descargala ahora</p>
+            <h3 data-i18n="download_title">Es gratis y esta disponible para Android</h3>
+            <p class="muted" data-i18n="download_desc">Empieza hoy mismo a tomar el control de tu dinero.</p>
           </div>
-          <a class="button" href="#">Descargar en Google Play</a>
+          <a class="button" href="#" data-i18n="download_cta">Descargar en Google Play</a>
         </div>
       </div>
     </section>
@@ -159,27 +129,15 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow">Preguntas frecuentes</p>
+            <p class="eyebrow" data-i18n="faq_eyebrow">Preguntas frecuentes</p>
             <h3>FAQ</h3>
           </div>
         </div>
         <div class="game-grid">
-          <div class="game-card">
-            <h4>Necesito crear una cuenta?</h4>
-            <p class="muted">No. Finance Ninja funciona completamente sin registro.</p>
-          </div>
-          <div class="game-card">
-            <h4>Mis datos van a la nube?</h4>
-            <p class="muted">No. Todo se guarda localmente en tu dispositivo. Puedes hacer respaldos manuales cuando quieras.</p>
-          </div>
-          <div class="game-card">
-            <h4>Es completamente gratis?</h4>
-            <p class="muted">Si. La app es gratuita e incluye anuncios opcionales que ayudan a mantener el desarrollo.</p>
-          </div>
-          <div class="game-card">
-            <h4>Funciona sin internet?</h4>
-            <p class="muted">Si, al 100%. No necesitas conexion para usarla.</p>
-          </div>
+          <div class="game-card"><h4 data-i18n="q1">Necesito crear una cuenta?</h4><p class="muted" data-i18n="a1">No. Finance Ninja funciona completamente sin registro.</p></div>
+          <div class="game-card"><h4 data-i18n="q2">Mis datos van a la nube?</h4><p class="muted" data-i18n="a2">No. Todo se guarda localmente en tu dispositivo. Puedes hacer respaldos manuales cuando quieras.</p></div>
+          <div class="game-card"><h4 data-i18n="q3">Es completamente gratis?</h4><p class="muted" data-i18n="a3">Si. La app es gratuita e incluye anuncios opcionales que ayudan a mantener el desarrollo.</p></div>
+          <div class="game-card"><h4 data-i18n="q4">Funciona sin internet?</h4><p class="muted" data-i18n="a4">Si, al 100%. No necesitas conexion para usarla.</p></div>
         </div>
       </div>
     </section>
@@ -187,19 +145,124 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> ARGOSINUX. Todos los derechos reservados.</p>
+      <p>© <span id="year"></span> ARGOSINUX. <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
       <div class="footer-links">
-        <a href="privacy-policy.html">Privacidad</a>
-        <a href="../../index.html">Inicio</a>
+        <a href="privacy-policy.html" data-i18n="footer_privacy">Privacidad</a>
+        <a href="../../index.html" data-i18n="footer_home">Inicio</a>
       </div>
     </div>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const translations = {
+      es: {
+        page_title: "Finance Ninja - ARGOSINUX",
+        page_description: "Finance Ninja: asistente financiero personal offline para presupuesto, metas de ahorro y reportes.",
+        brand_kicker: "App financiera",
+        nav_home: "Inicio",
+        nav_privacy: "Privacidad",
+        nav_faq: "Preguntas frecuentes",
+        nav_download: "Descargar en Google Play",
+        hero_kicker: "Domina tus finanzas. Sin complicaciones.",
+        hero_title: "Tu asistente financiero personal en el bolsillo.",
+        hero_desc: "Registra gastos, planifica tu presupuesto, alcanza tus metas de ahorro y visualiza tu progreso economico desde tu celular, sin conexion a internet.",
+        hero_cta_download: "Descargar gratis en Android",
+        hero_cta_privacy: "Politicas de privacidad",
+        hero_card_desc: "Control total del dinero, 100% privado en tu dispositivo.",
+        features_eyebrow: "Caracteristicas principales",
+        features_title: "Todo lo que necesitas para ordenar tus finanzas",
+        f1_t: "Dashboard inteligente", f1_d: "Visualiza tu balance mensual, ingresos, gastos y presupuesto planificado.",
+        f2_t: "Presupuesto por categorias", f2_d: "Asigna limites de gasto por categoria y recibe avisos antes de superarlos.",
+        f3_t: "Metas de ahorro", f3_d: "Define objetivos financieros y realiza seguimiento de tu progreso.",
+        f4_t: "Historial de transacciones", f4_d: "Registra ingresos y gastos con categorias personalizables. Filtra y analiza.",
+        f5_t: "Transacciones recurrentes", f5_d: "Automatiza pagos fijos como arriendo, servicios o suscripciones.",
+        f6_t: "Metricas y reportes", f6_d: "Analiza tus finanzas con resumenes mensuales y exporta a PDF.",
+        f7_t: "Lista de compras", f7_d: "Organiza compras planificadas y controla el gasto antes de comprar.",
+        f8_t: "Notificaciones inteligentes", f8_d: "Recibe recordatorios y alertas sobre gastos y presupuesto.",
+        f9_t: "100% privado y seguro", f9_d: "Toda la informacion se almacena localmente en tu dispositivo.",
+        f10_t: "Respaldo y restauracion", f10_d: "Exporta e importa tu informacion para no perder datos.",
+        why_eyebrow: "Por que Finance Ninja", why_title: "Ventajas clave",
+        why_1: "Funciona sin internet: SI", why_2: "Datos 100% en tu dispositivo: SI", why_3: "Sin suscripciones: SI",
+        why_4: "Presupuesto + Metas + Metricas: SI", why_5: "Exportacion en PDF: SI",
+        testi_eyebrow: "Testimonios", testi_title: "Resenas de usuarios",
+        testi_1: "\"Finalmente una app de finanzas que no me pide crear una cuenta ni subir mis datos a la nube.\"",
+        testi_2: "\"Empece a ahorrar desde el primer mes. Ver las metricas me motivo a gastar mejor.\"",
+        download_eyebrow: "Descargala ahora", download_title: "Es gratis y esta disponible para Android", download_desc: "Empieza hoy mismo a tomar el control de tu dinero.", download_cta: "Descargar en Google Play",
+        faq_eyebrow: "Preguntas frecuentes", q1: "Necesito crear una cuenta?", a1: "No. Finance Ninja funciona completamente sin registro.",
+        q2: "Mis datos van a la nube?", a2: "No. Todo se guarda localmente en tu dispositivo. Puedes hacer respaldos manuales cuando quieras.",
+        q3: "Es completamente gratis?", a3: "Si. La app es gratuita e incluye anuncios opcionales que ayudan a mantener el desarrollo.",
+        q4: "Funciona sin internet?", a4: "Si, al 100%. No necesitas conexion para usarla.",
+        footer_rights: "Todos los derechos reservados.", footer_privacy: "Privacidad", footer_home: "Inicio"
+      },
+      en: {
+        page_title: "Finance Ninja - ARGOSINUX",
+        page_description: "Finance Ninja: offline personal finance assistant for budgeting, savings goals, and reports.",
+        brand_kicker: "Finance app",
+        nav_home: "Home",
+        nav_privacy: "Privacy",
+        nav_faq: "FAQ",
+        nav_download: "Download on Google Play",
+        hero_kicker: "Master your finances. No complexity.",
+        hero_title: "Your personal finance assistant in your pocket.",
+        hero_desc: "Track expenses, plan your budget, hit savings goals, and visualize your financial progress from your phone, fully offline.",
+        hero_cta_download: "Free download on Android",
+        hero_cta_privacy: "Privacy policy",
+        hero_card_desc: "Full control of your money, 100% private on your device.",
+        features_eyebrow: "Main features",
+        features_title: "Everything you need to organize your finances",
+        f1_t: "Smart dashboard", f1_d: "See monthly balance, income, spending, and planned budget at a glance.",
+        f2_t: "Category budgets", f2_d: "Set spending limits by category and get alerts before exceeding them.",
+        f3_t: "Savings goals", f3_d: "Define financial goals and track your progress clearly.",
+        f4_t: "Transaction history", f4_d: "Track income and expenses with custom categories. Filter and analyze.",
+        f5_t: "Recurring transactions", f5_d: "Automate fixed payments like rent, utilities, or subscriptions.",
+        f6_t: "Metrics and reports", f6_d: "Analyze your finances with monthly summaries and export to PDF.",
+        f7_t: "Shopping list", f7_d: "Plan purchases and control spending before you buy.",
+        f8_t: "Smart notifications", f8_d: "Receive reminders and alerts about spending and budgets.",
+        f9_t: "100% private and secure", f9_d: "All information is stored locally on your device.",
+        f10_t: "Backup and restore", f10_d: "Export and import your information so you never lose your data.",
+        why_eyebrow: "Why Finance Ninja", why_title: "Key advantages",
+        why_1: "Works offline: YES", why_2: "Data stays on your device: YES", why_3: "No subscriptions: YES",
+        why_4: "Budget + Goals + Metrics: YES", why_5: "PDF export: YES",
+        testi_eyebrow: "Testimonials", testi_title: "User reviews",
+        testi_1: "\"Finally a finance app that does not force me to create an account or upload my data to the cloud.\"",
+        testi_2: "\"I started saving from the first month. Seeing metrics motivated me to spend better.\"",
+        download_eyebrow: "Download now", download_title: "Free and available on Android", download_desc: "Start taking control of your money today.", download_cta: "Download on Google Play",
+        faq_eyebrow: "Frequently asked questions", q1: "Do I need to create an account?", a1: "No. Finance Ninja works fully without registration.",
+        q2: "Do my data go to the cloud?", a2: "No. Everything is stored locally on your device. You can make manual backups anytime.",
+        q3: "Is it fully free?", a3: "Yes. The app is free and includes optional ads that support development.",
+        q4: "Does it work offline?", a4: "Yes, 100%. No internet connection is required.",
+        footer_rights: "All rights reserved.", footer_privacy: "Privacy", footer_home: "Home"
+      }
+    };
+
+    const metaDescription = document.getElementById("meta-description");
+    const langButtons = document.querySelectorAll(".lang-btn");
+
+    const setLanguage = (lang) => {
+      const dict = translations[lang] || translations.es;
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        const key = el.dataset.i18n;
+        if (dict[key]) el.textContent = dict[key];
+      });
+      if (dict.page_title) document.title = dict.page_title;
+      if (dict.page_description && metaDescription) metaDescription.setAttribute("content", dict.page_description);
+      langButtons.forEach((btn) => {
+        const isActive = btn.dataset.lang === lang;
+        btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+      try { localStorage.setItem("site_lang", lang); } catch (err) {}
+    };
+
+    langButtons.forEach((btn) => btn.addEventListener("click", () => setLanguage(btn.dataset.lang)));
+
+    const storedLang = (() => {
+      try { return localStorage.getItem("site_lang"); } catch (err) { return null; }
+    })();
+    const browserLang = navigator.language && navigator.language.toLowerCase().startsWith("es") ? "es" : "en";
+    setLanguage(storedLang || browserLang || "es");
   </script>
 </body>
 </html>
-
-
-
