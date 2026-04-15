@@ -124,21 +124,32 @@ img{max-width:100%; display:block}
   border-color:rgba(111,210,255,0.4);
 }
 
-.nav a,
-.nav-link{
+.nav a{
   color:var(--text);
-  padding:10px 14px;
-  border-radius:999px;
-  border:1px solid transparent;
+  padding:8px 0;
+  border:0;
   background:transparent;
   font:inherit;
+  font-weight:500;
   cursor:pointer;
+  position:relative;
 }
 
-.nav a:hover,
-.nav-link:hover{
-  border-color:rgba(111,210,255,0.4);
-  background:rgba(15,26,44,0.8);
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:2px;
+  height:1px;
+  background:rgba(111,210,255,0.55);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform 0.2s ease;
+}
+
+.nav a:hover::after{
+  transform:scaleX(1);
 }
 
 .nav-dropdown{position:relative}
