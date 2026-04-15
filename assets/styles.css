@@ -126,13 +126,18 @@ img{max-width:100%; display:block}
 
 .nav > a,
 .nav > .nav-dropdown > .nav-link{
+  appearance:none;
+  -webkit-appearance:none;
   color:var(--text);
+  margin:0;
   padding:8px 0;
   border:0;
   background:transparent;
   font:inherit;
+  line-height:inherit;
   font-weight:500;
   cursor:pointer;
+  display:inline-block;
   position:relative;
 }
 
