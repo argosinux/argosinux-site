@@ -356,7 +356,7 @@
     });
 
     const langButtons = document.querySelectorAll(".lang-btn");
-    const langBlocks = document.querySelectorAll("[data-lang]");
+    const langBlocks = document.querySelectorAll("[data-lang]:not(.lang-btn)");
 
     const setLanguage = (lang) => {
       const dict = translations[lang] || translations.es;
