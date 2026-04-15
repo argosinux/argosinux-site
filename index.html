@@ -26,10 +26,23 @@
 
       <nav id="primary-nav" class="nav">
         <a href="#inicio" data-i18n="nav_home">Inicio</a>
-        <a href="#number-ninja" data-i18n="nav_number_ninja">Number Ninja</a>
-        <a href="products/finance-ninja/index.html" data-i18n="nav_finance_ninja">Finance Ninja</a>
+        <div class="nav-dropdown">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav_games">
+            Juegos
+          </button>
+          <div class="nav-menu">
+            <a href="#number-ninja" data-i18n="nav_number_ninja">Number Ninja</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link" type="button" aria-haspopup="true" aria-expanded="false" data-i18n="nav_apps">
+            App
+          </button>
+          <div class="nav-menu">
+            <a href="products/finance-ninja/index.html" data-i18n="nav_finance_ninja">Finance Ninja</a>
+          </div>
+        </div>
         <a href="#sobre-nosotros" data-i18n="nav_about">Sobre nosotros</a>
-        <a href="#number-ninja" data-i18n="nav_download">Descargar Number Ninja</a>
         <div class="lang-switch" role="group" aria-label="Selector de idioma">
           <button class="lang-btn" type="button" data-lang="es" aria-pressed="true">ES</button>
           <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
@@ -200,10 +213,9 @@
         nav_home: "Inicio",
         nav_games: "Juegos",
         nav_number_ninja: "Number Ninja",
-        nav_apps: "Apps",
+        nav_apps: "App",
         nav_finance_ninja: "Finance Ninja",
         nav_about: "Sobre nosotros",
-        nav_download: "Descargar Number Ninja",
         hero_kicker: "Aprender jugando, jugar aprendiendo",
         hero_title: "Transformamos el aprendizaje en una aventura móvil que engancha y educa.",
         hero_desc: "Desarrollamos juegos educativos de alta calidad para iOS y Android. Diseñados con foco pedagógico, accesibles offline y sin barreras de pago.",
@@ -263,10 +275,9 @@
         nav_home: "Home",
         nav_games: "Games",
         nav_number_ninja: "Number Ninja",
-        nav_apps: "Apps",
+        nav_apps: "App",
         nav_finance_ninja: "Finance Ninja",
         nav_about: "About us",
-        nav_download: "Download Number Ninja",
         hero_kicker: "Learn by playing, play by learning",
         hero_title: "We turn learning into a mobile adventure that hooks and teaches.",
         hero_desc: "We build high-quality educational games for iOS and Android. Designed with a pedagogical focus, offline-friendly, and without paywalls.",
@@ -322,11 +333,23 @@
 
     const navToggle = document.querySelector(".nav-toggle");
     const nav = document.getElementById("primary-nav");
+    const navDropdowns = document.querySelectorAll(".nav-dropdown");
     const metaDescription = document.getElementById("meta-description");
 
     navToggle.addEventListener("click", () => {
       const isOpen = nav.classList.toggle("open");
       navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    navDropdowns.forEach((dropdown) => {
+      const button = dropdown.querySelector(".nav-link");
+      const menu = dropdown.querySelector(".nav-menu");
+      if (!button || !menu) return;
+
+      button.addEventListener("click", () => {
+        const isOpen = menu.classList.toggle("open");
+        button.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
     });
 
     const langButtons = document.querySelectorAll(".lang-btn");
